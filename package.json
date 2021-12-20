@@ -1,0 +1,78 @@
+{
+	"name": "@younho9/generator-typescript-esm",
+	"version": "0.0.0",
+	"description": "Personal TypeScript ES module scaffold generator",
+	"keywords": [
+		"yeoman-generator",
+		"boilerplate",
+		"template",
+		"scaffold",
+		"typescript",
+		"typescript-starter",
+		"ts",
+		"esm",
+		"starter",
+		"starter-template"
+	],
+	"bugs": {
+		"url": "https://github.com/younho9/generator-typescript-esm/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/younho9/generator-typescript-esm.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Younho Choo",
+		"email": "yo+github@younho9.com",
+		"url": "https://younho9.dev"
+	},
+	"files": [
+		"app"
+	],
+	"scripts": {
+		"prepare": "yarn git:install-hooks",
+		"git:commit-msg": "commitlint --edit",
+		"git:install-hooks": "husky install",
+		"git:pre-commit": "yarn test",
+		"test": "xo && jest"
+	},
+	"commitlint": {
+		"extends": "@commitlint/config-conventional"
+	},
+	"xo": {
+		"rules": {
+			"unicorn/prefer-module": "off"
+		},
+		"envs": [
+			"jest"
+		],
+		"ignores": [
+			"app/templates/**"
+		]
+	},
+	"jest": {
+		"testMatch": [
+			"**/__tests__/**"
+		],
+		"testEnvironment": "node"
+	},
+	"dependencies": {
+		"@sindresorhus/is": "^4.2.0",
+		"@sindresorhus/slugify": "^1.1.0",
+		"camelcase": "^6.2.1",
+		"is-scoped": "^2.1.0",
+		"normalize-url": "^6.1.0",
+		"yeoman-generator": "^5.4.2"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "15.0.0",
+		"@commitlint/config-conventional": "15.0.0",
+		"husky": "7.0.4",
+		"jest": "^27.4.5",
+		"xo": "0.47.0",
+		"yeoman-assert": "^3.1.1",
+		"yeoman-environment": "3.8.1",
+		"yeoman-test": "^6.2.0"
+	}
+}
