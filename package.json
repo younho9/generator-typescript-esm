@@ -41,21 +41,21 @@
 		"extends": "@commitlint/config-conventional"
 	},
 	"xo": {
-		"rules": {
-			"unicorn/prefer-module": "off"
-		},
 		"envs": [
 			"jest"
 		],
 		"ignores": [
 			"app/templates/**"
-		]
+		],
+		"rules": {
+			"unicorn/prefer-module": "off"
+		}
 	},
 	"jest": {
+		"testEnvironment": "node",
 		"testMatch": [
 			"**/__tests__/**"
-		],
-		"testEnvironment": "node"
+		]
 	},
 	"dependencies": {
 		"@sindresorhus/is": "^4.2.0",
@@ -74,5 +74,8 @@
 		"yeoman-assert": "^3.1.1",
 		"yeoman-environment": "3.8.1",
 		"yeoman-test": "^6.2.0"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
