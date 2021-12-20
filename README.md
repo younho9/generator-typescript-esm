@@ -4,7 +4,7 @@
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-> Personal TypeScript ES module scaffold generator
+> [Personal TypeScript ES module](https://github.com/younho9/typescript-esm-starter) scaffold generator
 
 ![screenshot](https://user-images.githubusercontent.com/48426991/146701242-4d1fa744-e715-4fe2-a896-66e35046c2a3.png)
 
